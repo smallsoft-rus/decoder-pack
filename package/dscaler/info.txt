@@ -1,0 +1,11 @@
+DScaler 5 - version 0.0.8
+http://deinterlace.sourceforge.net/dscaler5.htm
+Licanse: GNU/GPL
+
+MPEG2 video decoder
+This filter can decode all types of MPEG1 and MPEG 2 video.
+(c) 2004 Michael Lespinasse, Aaron Holtzman, Gabest, John Adcock
+
+Mpeg Audio Decoder
+This filter can decode all types of DVD and DVB audio including MPEG layers 1 2 & 3, DTS, AC3 and PCM.
+(c) 2004 Michael Lespinasse, Aaron Holtzman, , GabestJohn Adcock, Underbit Technologies Inc., Glidas Bazin 

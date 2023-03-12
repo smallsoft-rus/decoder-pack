@@ -1,0 +1,2 @@
+CoreAAC is an AAC DirectShow filter decoder based on FAAD2.
+AAC means "Advanced Audio Coding", and in the beginning it was also called MPEG-2 NBC for "Non-Backwards Compatible" as opposed to the MPEG-1 and MPEG-2 BC (with 5.1 channels) standards.

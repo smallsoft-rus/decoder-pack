@@ -1,0 +1,64 @@
+====Информация о сборке.=====
+SmallSoft Decoder Pack 1.0
+Описание: Набор самых необходимых декодеров для домашнего воспроизведения музыки и видео. Ориентирована на поддержку форматов аудио: WAV MP1 MP2 MP3 OGG AAC FLAC WV ALAC; форматов видео AVI MPEG MKV и типов сжатия DIVX, XVID, DX50, 3IVX, H264, AVC1. сборка содержит проигрыватель Small Media Player 1.6 и утилиту для управления кодеками SmallSoft Multimedia Control Panel. Имеется оболочка настройки, которая позволяеи включать, отключать и настраивать кодеки.
+Автор: V@dim-T@gil (http://smallsoft.h16.ru/)
+
+====Компоненты:====
+1. Core AAC 1.0 b9
+Автор: corecodec.org
+Описание: Бесплатный декодер звука в формате AAC. Основан на декодере FAAD.
+ССылки: http://corecodec.org/projects/coreaac/
+
+2. DScaler Audio Decoder 5.0.0.8
+Автор: John Adcock, Torbjorn Jansson
+Описание: декодер звука в форматах MPEG layer 1 2 & 3, DTS, AC3
+ССылки: http://deinterlace.sourceforge.net/dscaler5.htm
+
+3. Gabest MPEG Splitter
+Автор: Gabest
+Описание: Позволяет воспроизводить MPEG2-видеофайлы в форматах TS и PS
+Ссылки: http://www.sourceforge.net/projects/guliverkli2/
+
+4. Gabest MKV Splitter
+Автор: Gabest
+Описание: Позволяет воспроизводить видеофайлы в формате MKV
+Ссылки: http://www.sourceforge.net/projects/guliverkli2/
+
+5. DC-Bass Source 1.3.0
+Автор: Milenko Mitrovic
+Описание: The DC-Bass Source Filter is a BASS based DirectShow Audio Decoder. Currently supported formats are:
+-Audio:  AAC, ALAC, APE, FLAC, MP3, MPC, TTA, WV; 
+-Shoutcast: MP3, AAC, OGG; 
+-Tracker: MO3, IT, XM, S3M, MTM, MOD, UMX;
+Ссылки: http://www.dsp-worx.de
+
+6. DScaler MPEG-2 Video Decoder 5.0.0.8
+Автор: John Adcock, Torbjorn Jansson
+Описание: декодер видео MPEG1 и MPEG2
+Сcылки: http://deinterlace.sourceforge.net/dscaler5.htm
+
+7. DivX MPEG-4 ASP Decoder 6.10
+Автор: DivX, Inc.
+Описание: декодер видео MPEG4 ASP, то есть DIVX DX50 DIV3 XVID и некоторые другие
+Сcылки: http://divx.com/
+
+8. DivX H.264 Decoder 1.1
+Автор: DivX, Inc.
+Описание: декодер видео MPEG4 AVC (H.264)
+Сcылки: http://divx.com/
+
+9. Small Media Player 1.6
+Автор: V@dim-T@gil 
+Описание: Легкий проигрыватель мультимедиа файлов для Windows
+Ссылки: http://smallsoft.h16.ru/programs/small_media_player/
+
+10. SmallSoft Multimedia Control Panel 1.1
+Автор: V@dim-T@gil 
+Описание: программа для управления кодеками
+Ссылки: http://smallsoft.h16.ru/programs/mmcontrol/
+
+====Рекомендации====
+Перед установкой программы необходимо закрыть все мультимедийные приложения: проигрыватели, редакторы аудио/видео, конверторы и т.п. 
+Не устанавливайте какие-либо компоненты, если они уже установлены на системе, в том числе в составе других пакетов кодеков или программ. Это может привести к конфликту.
+Устанавливайте только те кодеки, которые нужны. Не стоит ставить кодек, если уже установлен другой кодек на тот же тип данных. Это снизит загруженность системы и вероятность возникновения проблем.
+Теоретически данные пакет может сосуществовать с другими пакетами кодеков на одной системе (ввиду небольшого числа компонентов), однако не рекомендуется злоупотреблять этим и перегружать систему.

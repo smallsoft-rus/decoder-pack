@@ -1,0 +1,8 @@
+DIVX H264 Decoder Filter 1.1 (build 08_02_00_00026_Magnolia)
+Trademark DivX Inc.
+
+What is H.264?
+
+Video for DivX Plus® is based on the H.264 standard, a state-of-the-art digital format for efficiently encoding high definition video. Why is H.264 so great? To make a long story short, H.264 encompasses a collection of powerful features that enable the delivery of high-quality video at very low data rates. Using DivX Plus Software you can create, enjoy and share stunning HD video in the same ways that you can with standard definition DivX® video. This includes creating personal libraries on your hard drive, burning files to disc or transferring them via USB drives to your DivX Plus devices, or even serving them to visitors on your web page using the DivX Plus Web Player.
+
+The H.264 standard is already set to supersede some of the formats that are commonplace today such as DV, the standard used by many consumer video cameras, and MPEG-2, the standard for DVD video and some types of cable TV and digital broadcast.
