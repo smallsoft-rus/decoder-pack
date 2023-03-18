@@ -54,9 +54,6 @@ TCHAR* GetCodecHomepage(TCHAR* name){
 if(lstrcmpi(name,L"bass")==0){	
 	return L"http://dsp-worx.de/";
 }
-if(lstrcmpi(name,L"aac")==0){	
-	return L"http://corecodec.org/";
-}
 if(lstrcmpi(name,L"divx_h264")==0){	
 	 return L"http://divx.com/";
 }
@@ -64,7 +61,7 @@ if(lstrcmpi(name,L"divx")==0){
 	return L"http://divx.com/";
 }
 if(lstrcmpi(name,L"xvid")==0){	
-	return L"http://xvid.org/";
+	return L"http://xvid.com/";
 }
 if(lstrcmpi(name,L"ds_audio")==0){	
 	return L"http://deinterlace.sourceforge.net/dscaler5.htm";
@@ -79,7 +76,7 @@ if(lstrcmpi(name,L"mpeg")==0){
 	return L"http://www.sourceforge.net/projects/guliverkli2/";
 }
 
-return L"http://smallsoft.h16.ru/";
+return L"http://smallsoft2.blogspot.com/";
 
 }
 
@@ -221,15 +218,15 @@ switch(uMsg){
 		MessageBox(hMainWnd,L"SmallSoft Decoder Pack 1.0 - Оболочка настройки\n"
 			L"Автор: VadimTagil\n"
 			L"E-Mail: vadim--111@yandex.ru\n"
-			L"Веб-сайт: http://smallsoft.h16.ru/\n"
+			L"Веб-сайт: http://smallsoft2.blogspot.com/\n"
 					  ,L"О программе",MB_OK);
 		break;
 	case ID_CODEC_HOMEPAGE:
 	ShellExecute(NULL, L"open", GetCodecHomepage(CodecTable[Selected].internal_name),L"",L"",SW_SHOW);break;
 	case ID_HOMEPAGE:
-	ShellExecute(NULL, L"open", L"http://smallsoft.h16.ru/",L"",L"",SW_SHOW);break;
-	case ID_FORUM:
-	ShellExecute(NULL, L"open", L"http://softforum.zbord.ru/",L"",L"",SW_SHOW);break;
+	ShellExecute(NULL, L"open", L"http://smallsoft2.blogspot.com/",L"",L"",SW_SHOW);break;
+	case ID_SOURCEREPO:
+	ShellExecute(NULL, L"open", L"https://github.com/smallsoft-rus/decoder-pack",L"",L"",SW_SHOW);break;
 	break;
 	case ID_HELP:
 	ShellExecute(NULL, L"open", L"readme.txt",L"",L"",SW_SHOW);
@@ -243,9 +240,6 @@ switch(uMsg){
 	break;
 	case ID_RUN_SMP:
 	ShellExecute(NULL, L"open", L"smplayer",L"",L"",SW_SHOW);
-	break;
-	case ID_RUN_MPLAY32:
-	ShellExecute(NULL, L"open", L"mplay32",L"",L"",SW_SHOW);
 	break;
 	case ID_RUN_REGEDIT:
 	ShellExecute(NULL, L"open", L"regedit",L"",L"",SW_SHOW);
