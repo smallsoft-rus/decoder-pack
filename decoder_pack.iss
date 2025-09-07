@@ -5,16 +5,16 @@
 [Setup]
 AppId={{D0C3BDCD-78DA-480A-B687-1BD744178591}
 AppName=SmallSoft Decoder Pack
-AppVersion=1.0
+AppVersion=1.1
 AppPublisher=SmallSoft, Inc.
-AppPublisherURL=http://smallsoft.h16.ru/
-AppSupportURL=http://smallsoft.h16.ru/
-AppUpdatesURL=http://smallsoft.h16.ru/
-DefaultDirName={pf}\SmallSoft_Decoder_Pack
+AppPublisherURL=https://smallsoftru.wordpress.com/
+AppSupportURL=https://smallsoftru.wordpress.com/
+AppUpdatesURL=https://smallsoftru.wordpress.com/
+DefaultDirName={autopf}\SmallSoft_Decoder_Pack
 DefaultGroupName=SmallSoft Decoder Pack
-InfoBeforeFile=D:\Distr\SmallSoft_Decoder_Pack\package_info.txt
-OutputDir=SETUP
-OutputBaseFilename=smallsoft_decoder_pack
+InfoBeforeFile=package\package_info.txt
+OutputDir=Release
+OutputBaseFilename=decoderpack
 SetupIconFile=config\images\smallsoft.ico
 Compression=lzma
 SolidCompression=yes
@@ -24,37 +24,35 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 
 [Tasks]
-Name: "desktopicon"; Description: "Ярлык настройки на рабочем столе"; GroupDescription: "{cm:AdditionalIcons}"; 
-Name: "quicklaunchicon"; Description: "Ярлык настройки на панели быстрого запуска"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
+Name: "desktopicon"; Description: "Ярлык настройки на рабочем столе"; GroupDescription: "{cm:AdditionalIcons}";
 ;-----SMALL MEDIA PLAYER -----
 Name: "smplayer_desktopicon"; Description: "Ярлык Small Media Player на рабочем столе"; GroupDescription: "{cm:AdditionalIcons}"; Components:program\smplayer;
-Name: "smplayer_quicklaunchicon"; Description: "Ярлык Small Media Player на панели быстрого запуска"; GroupDescription: "{cm:AdditionalIcons}";  OnlyBelowVersion: 0,6.1; Components:program\smplayer;
 ;----MMCONTROL-----
 Name: "mmcontrol_desktopicon"; Description: "Ярлык Multimedia Control Panel на рабочем столе"; GroupDescription: "{cm:AdditionalIcons}"; Components:program\mmcontrol;
 
 [Files]
-Source: "D:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\package_info.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\mmcontrol.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\readme_mmcontrol.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\AAC\*"; DestDir: "{app}\AAC"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\aac;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\DC-Bass_Source\*"; DestDir: "{app}\DC-Bass_Source"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\bass;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\dscaler\MpegAudio.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion;Components: audio\ds_audio;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\divx\DivXDec.ax"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\divx\DivXDecH264.ax"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx_h264;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\divx\divx_h264_info.txt"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx_h264;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\dscaler\MpegVideo.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion;Components: video\ds_video;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\splitter\MatroskaSplitter.ax"; DestDir: "{app}\splitter"; Flags: ignoreversion;Components: video\mkv;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\splitter\MpegSplitter.ax"; DestDir: "{app}\splitter"; Flags: ignoreversion;Components: video\mpeg;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "package\package_info.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "package\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\mmcontrol.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\readme_mmcontrol.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\AAC\*"; DestDir: "{app}\AAC"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\aac;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\DC-Bass_Source\*"; DestDir: "{app}\DC-Bass_Source"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\bass;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\MpegAudio.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion;Components: audio\ds_audio;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\divx\DivXDec.ax"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\divx\DivXDecH264.ax"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx_h264;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\divx\divx_h264_info.txt"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx_h264;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\MpegVideo.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion;Components: video\ds_video;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\splitter\MatroskaSplitter.ax"; DestDir: "{app}\splitter"; Flags: ignoreversion;Components: video\mkv;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\splitter\MpegSplitter.ax"; DestDir: "{app}\splitter"; Flags: ignoreversion;Components: video\mpeg;
 
-Source: "D:\Distr\SmallSoft_Decoder_Pack\divx\divx.ico"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx or video\divx_h264;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\dscaler\DScaler5.chm"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\dscaler\GenDMOProp.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
-Source: "D:\Distr\SmallSoft_Decoder_Pack\dscaler\info.txt"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\divx\divx.ico"; DestDir: "{app}\divx"; Flags: ignoreversion;Components: video\divx or video\divx_h264;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\DScaler5.chm"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\GenDMOProp.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
+Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\info.txt"; DestDir: "{app}\dscaler"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\ds_audio or video\ds_video;
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -76,21 +74,17 @@ Name: "program\mmcontrol"; Description: "SmallSoft Multimedia Control Panel"; Ty
 
 [Icons]
 Name: "{group}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"
-Name: "{group}\{cm:ProgramOnTheWeb,SmallSoft Decoder Pack}"; Filename: "http://smallsoft.h16.ru/"
-Name: "{group}\Форум SmallSoft"; Filename: "http://softforum.zbord.ru";
+Name: "{group}\{cm:ProgramOnTheWeb,SmallSoft Decoder Pack}"; Filename: "https://smallsoftru.wordpress.com/"
+Name: "{group}\Исходный код"; Filename: "https://github.com/smallsoft-rus/decoder-pack";
 Name: "{group}\{cm:UninstallProgram,SmallSoft Decoder Pack}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"; Tasks: desktopicon
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"; Tasks: quicklaunchicon;
 
 ;FAVOURITES
-Name: "{userfavorites}\SmallSoft - Бесплатные программы"; IconFilename:"{app}\config.exe"; Filename: "http://smallsoft.h16.ru/";MinVersion: 4.1,4 ;
-Name: "{userfavorites}\Soft Forum"; Filename: "http://softforum.zbord.ru/"  ;MinVersion: 4.1,4 ;
+Name: "{userfavorites}\SmallSoft - Бесплатные программы"; IconFilename:"{app}\config.exe"; Filename: "https://smallsoftru.wordpress.com/"; MinVersion: 4.1,4;
 ;-------------------------------------------------------------------------------------------------------------------------
 ; DESKTOP PROGRAM ICONS
 Name: "{commondesktop}\Small Media Player"; IconFilename:"{app}\smp.ico"; Filename: "{app}\smplayer.exe"; Tasks: smplayer_desktopicon;
 Name: "{commondesktop}\SmallSoft Multimedia Control Panel"; Filename: "{app}\mmcontrol.exe"; Tasks: mmcontrol_desktopicon;
-;QUICKLAUNCH PROGRAM ICONS
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\Small Media Player"; IconFilename:"{app}\smp.ico"; Filename: "{app}\smplayer.exe"; Tasks: smplayer_quicklaunchicon;
 
 ;CONFIG ICONS PROGRAM GROUP
 Name: "{group}\Аудио кодеки\Свойства DC-Bass Source"; Filename: "{app}\config.exe"; Parameters:"/p ""DC-Bass Source"""; IconFileName:"{app}\DC-Bass_Source\dc.ico";Components:audio\bass;
@@ -117,14 +111,14 @@ Filename: "regsvr32.exe"; Parameters:" /s ""{app}\splitter\MatroskaSplitter.ax""
 Filename: "regsvr32.exe"; Parameters:" /s ""{app}\splitter\MpegSplitter.ax""";  StatusMsg: "Регистрация Gabest MPEG Splitter";  Flags:runhidden; Components:video\mpeg;
 
 [UninstallRun]
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\aac\CoreAAC.ax""";  StatusMsg: "Регистрация CoreAAC";  Flags:runhidden; Components:audio\aac;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\DC-Bass_Source\DCBassSource.ax""";  StatusMsg: "Регистрация DC-Bass Source";  Flags:runhidden; Components:audio\bass;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\dscaler\MpegAudio.dll""";  StatusMsg: "Регистрация DScaler Audio Decoder";  Flags:runhidden; Components:audio\ds_audio;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\divx\DivXDec.ax""";  StatusMsg: "Регистрация DivX Decoder";  Flags:runhidden; Components:video\divx;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\divx\DivXDecH264.ax""";  StatusMsg: "Регистрация DivX h264 Decoder";  Flags:runhidden; Components:video\divx_h264;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\dscaler\MpegVideo.dll""";  StatusMsg: "Регистрация DScaler Mpeg2 Video Decoder";  Flags:runhidden; Components:video\ds_video;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\splitter\MatroskaSplitter.ax""";  StatusMsg: "Регистрация Gabest MKV Splitter";  Flags:runhidden; Components:video\mkv;
-Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\splitter\MpegSplitter.ax""";  StatusMsg: "Регистрация Gabest MPEG Splitter";  Flags:runhidden; Components:video\mpeg;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\aac\CoreAAC.ax""";   Flags:runhidden; Components:audio\aac; RunOnceId: DelCoreAAC;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\DC-Bass_Source\DCBassSource.ax""";  Flags:runhidden; Components:audio\bass; RunOnceId: DelBass;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\dscaler\MpegAudio.dll"""; Flags:runhidden; Components:audio\ds_audio; RunOnceId: DelMpegAudio;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\divx\DivXDec.ax""";  Flags:runhidden; Components:video\divx; RunOnceId: DelDivx;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\divx\DivXDecH264.ax"""; Flags:runhidden; Components:video\divx_h264; RunOnceId: DelH264;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\dscaler\MpegVideo.dll"""; Flags:runhidden; Components:video\ds_video; RunOnceId: DelMpegVideo;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\splitter\MatroskaSplitter.ax"""; Flags:runhidden; Components:video\mkv; RunOnceId: DelMkv;
+Filename: "regsvr32.exe"; Parameters:" /u /s ""{app}\splitter\MpegSplitter.ax"""; Flags:runhidden; Components:video\mpeg; RunOnceId: DelMpegSplitter;
 
 
 [Registry]

@@ -76,7 +76,7 @@ if(lstrcmpi(name,L"mpeg")==0){
 	return L"http://www.sourceforge.net/projects/guliverkli2/";
 }
 
-return L"http://smallsoft2.blogspot.com/";
+return L"https://smallsoftru.wordpress.com/";
 
 }
 
@@ -215,16 +215,16 @@ switch(uMsg){
 		break;
 
 	case ID_ABOUT:
-		MessageBox(hMainWnd,L"SmallSoft Decoder Pack 1.0 - Оболочка настройки\n"
-			L"Автор: VadimTagil\n"
-			L"E-Mail: vadim--111@yandex.ru\n"
-			L"Веб-сайт: http://smallsoft2.blogspot.com/\n"
-					  ,L"О программе",MB_OK);
+		MessageBox(hMainWnd,L"SmallSoft Decoder Pack 1.1 - Оболочка настройки\n\n"
+			L"Автор: SmallSoft\n"
+			L"Веб-сайт: https://smallsoftru.wordpress.com/\n"
+			L"Исходный код: https://github.com/smallsoft-rus/decoder-pack\n"
+		,L"О программе",MB_OK);
 		break;
 	case ID_CODEC_HOMEPAGE:
 	ShellExecute(NULL, L"open", GetCodecHomepage(CodecTable[Selected].internal_name),L"",L"",SW_SHOW);break;
 	case ID_HOMEPAGE:
-	ShellExecute(NULL, L"open", L"http://smallsoft2.blogspot.com/",L"",L"",SW_SHOW);break;
+	ShellExecute(NULL, L"open", L"https://smallsoftru.wordpress.com/",L"",L"",SW_SHOW);break;
 	case ID_SOURCEREPO:
 	ShellExecute(NULL, L"open", L"https://github.com/smallsoft-rus/decoder-pack",L"",L"",SW_SHOW);break;
 	break;

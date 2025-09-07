@@ -1,7 +1,7 @@
 ====Информация о сборке.=====
-SmallSoft Decoder Pack 1.0
-Описание: Набор самых необходимых декодеров для домашнего воспроизведения музыки и видео. Ориентирована на поддержку форматов аудио: WAV MP1 MP2 MP3 OGG AAC FLAC WV ALAC; форматов видео AVI MPEG MKV и типов сжатия DIVX, XVID, DX50, 3IVX, H264, AVC1. сборка содержит проигрыватель Small Media Player 1.6 и утилиту для управления кодеками SmallSoft Multimedia Control Panel. Имеется оболочка настройки, которая позволяеи включать, отключать и настраивать кодеки.
-Автор: V@dim-T@gil (http://smallsoft.h16.ru/)
+SmallSoft Decoder Pack 1.1
+Описание: Набор самых необходимых декодеров для домашнего воспроизведения музыки и видео. Ориентирована на поддержку форматов аудио: WAV MP1 MP2 MP3 OGG AAC FLAC WV ALAC; форматов видео AVI MPEG MKV и типов сжатия DIVX, XVID, DX50, 3IVX, H264, AVC1. сборка содержит проигрыватель Small Media Player 1.6 и утилиту для управления кодеками SmallSoft Multimedia Control Panel. Имеется оболочка настройки, которая позволяет включать, отключать и настраивать кодеки.
+Автор: SmallSoft (https://smallsoftru.wordpress.com/)
 
 ====Компоненты:====
 1. Core AAC 1.0 b9
@@ -48,14 +48,14 @@ SmallSoft Decoder Pack 1.0
 Сcылки: http://divx.com/
 
 9. Small Media Player 1.6
-Автор: V@dim-T@gil 
+Автор: SmallSoft
 Описание: Легкий проигрыватель мультимедиа файлов для Windows
-Ссылки: http://smallsoft.h16.ru/programs/small_media_player/
+Ссылки: https://smallsoftru.wordpress.com/2025/04/28/small-media-player/
 
 10. SmallSoft Multimedia Control Panel 1.1
-Автор: V@dim-T@gil 
+Автор: SmallSoft
 Описание: программа для управления кодеками
-Ссылки: http://smallsoft.h16.ru/programs/mmcontrol/
+Ссылки: https://smallsoftru.wordpress.com/2025/05/02/multimedia-control-panel/
 
 ====Рекомендации====
 Перед установкой программы необходимо закрыть все мультимедийные приложения: проигрыватели, редакторы аудио/видео, конверторы и т.п. 
