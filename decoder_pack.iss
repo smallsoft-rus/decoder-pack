@@ -12,7 +12,7 @@ AppSupportURL=https://smallsoftru.wordpress.com/
 AppUpdatesURL=https://smallsoftru.wordpress.com/
 DefaultDirName={autopf}\SmallSoft_Decoder_Pack
 DefaultGroupName=SmallSoft Decoder Pack
-InfoBeforeFile=package\package_info.txt
+InfoBeforeFile=package\readme.txt
 OutputDir=Release
 OutputBaseFilename=decoderpack
 SetupIconFile=config\images\smallsoft.ico
@@ -32,8 +32,8 @@ Name: "mmcontrol_desktopicon"; Description: "Ярлык Multimedia Control Panel
 
 [Files]
 Source: "C:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "package\package_info.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "package\license.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
