@@ -229,7 +229,7 @@ switch(uMsg){
 	ShellExecute(NULL, L"open", L"https://github.com/smallsoft-rus/decoder-pack",L"",L"",SW_SHOW);break;
 	break;
 	case ID_HELP:
-	ShellExecute(NULL, L"open", L"readme.txt",L"",L"",SW_SHOW);
+	ShellExecute(NULL, L"open", L"help\\index.html",L"",L"",SW_SHOW);
 	break;
 	//case ID_EXIT:SendMessage(hMainWnd,WM_CLOSE,0,0);break;
 	case ID_RUN_DXDIAG:

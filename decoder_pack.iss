@@ -34,6 +34,7 @@ Name: "mmcontrol_desktopicon"; Description: "Ярлык Multimedia Control Panel
 Source: "C:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\license.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
+Source: "package\help\*"; DestDir: "{app}\help"; Flags: ignoreversion createallsubdirs; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
@@ -98,8 +99,8 @@ Name: "{group}\Программы\SmallSoft Multimedia Control Panel"; Filename:
 
 [Run]
 Filename: "{app}\config.exe"; Description: "Настроить кодеки"; Flags: nowait postinstall skipifsilent;
-Filename: "{app}\mmcontrol.exe"; Description: "Запустить утилиту SmallSoft Multimedia Control Panel"; Flags: nowait postinstall skipifsilent; Components: program\mmcontrol;
 Filename: "{app}\smplayer.exe"; Description: "Запустить Small Media Player"; Flags: nowait postinstall skipifsilent; Components: program\smplayer;
+
 ;----REGISTER CODECS------
 Filename: "regsvr32.exe"; Parameters:"/s ""{app}\aac\CoreAAC.ax""";  StatusMsg: "Регистрация CoreAAC";  Flags:runhidden; Components:audio\aac;
 Filename: "regsvr32.exe"; Parameters:" /s ""{app}\DC-Bass_Source\DCBassSource.ax""";  StatusMsg: "Регистрация DC-Bass Source";  Flags:runhidden; Components:audio\bass;
