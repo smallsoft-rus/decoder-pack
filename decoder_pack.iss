@@ -179,7 +179,7 @@ Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:string; ValueNam
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:string; ValueName:"file";ValueData:"{app}\splitter\MatroskaSplitter.ax";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mkv;
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:binary; ValueName:"IsEnabled";ValueData:"01";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mkv;
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:binary; ValueName:"HasProperties";ValueData:"00";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mkv;
-Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:string; ValueName:"guid";ValueData:"{{149D2E01-C32E-4939-80F6-C07B81015A7A}";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\ds_video;
+Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:string; ValueName:"guid";ValueData:"{{149D2E01-C32E-4939-80F6-C07B81015A7A}";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mkv;
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mkv\"; ValueType:string; ValueName:"formats";ValueData:"MKV MKA";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mkv;
 ;--------------------MPEG_SPLITTER------------------------
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mpeg\"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mpeg;
