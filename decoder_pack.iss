@@ -34,7 +34,7 @@ Name: "mmcontrol_desktopicon"; Description: "Ярлык Multimedia Control Panel
 Source: "C:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\license.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
-Source: "package\help\*"; DestDir: "{app}\help"; Flags: ignoreversion createallsubdirs; Components: main;
+Source: "package\help\*"; DestDir: "{app}\help"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
