@@ -18,6 +18,7 @@ OutputBaseFilename=decoderpack
 SetupIconFile=config\images\smallsoft.ico
 Compression=lzma
 SolidCompression=yes
+ChangesAssociations=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -189,3 +190,34 @@ Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mpeg\"; ValueType:binary; ValueNa
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mpeg\"; ValueType:binary; ValueName:"HasProperties";ValueData:"00";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mpeg;
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mpeg\"; ValueType:string; ValueName:"guid";ValueData:"{{DC257063-045F-4BE2-BD5B-E12279C464F0}";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mpeg;
 Root: HKLM; Subkey: "Software\SmallSoft\Codecs\mpeg\"; ValueType:string; ValueName:"formats";ValueData:"MPEG MPG MP1 MP2 MP3 TS";Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:video\mpeg;
+
+;-------------------- Small Media Player: registration for default apps ------------------------
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities"; ValueType:string; ValueName: "ApplicationDescription"; ValueData: "Small Media Player (SmallSoft Decoder Pack)"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities"; ValueType:string; ValueName: "ApplicationIcon"; ValueData: "{app}\smp.ico"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\RegisteredApplications"; ValueType:string; ValueName: "DP_SmallMediaPlayer"; ValueData: "Software\SmallSoft\DP_MediaPlayer\Capabilities"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".mp3"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".flac"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".mp3"; ValueData: "smallsoft_mediafile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".flac"; ValueData: "smallsoft_mediafile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\CLSID"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\CLSID"; ValueType:string; ValueName: ""; ValueData: "{{49017F88-033A-4F11-90F9-9057FE9FFB01}}"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\DefaultIcon"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\DefaultIcon"; ValueType:string; ValueName: ""; ValueData: "{app}\smp.ico"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\add"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\add"; ValueType:string; ValueName: ""; ValueData: "Add to Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\add\command"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\add\command"; ValueType:string; ValueName: ""; ValueData: """{app}\smplayer.exe"" /a ""%1"""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open"; ValueType:string; ValueName: ""; ValueData: "Open in Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open\command"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open\command"; ValueType:string; ValueName: ""; ValueData: """{app}\smplayer.exe"" ""%1"""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
