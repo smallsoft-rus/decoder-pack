@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.cpp text
+*.h text
+*.vcxproj text
+*.sln text eol=crlf
+*.ico binary
+
+# Exclude generated HTML from language stats
+package/** linguist-generated
