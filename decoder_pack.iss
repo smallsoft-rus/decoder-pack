@@ -1,5 +1,5 @@
 ; SmallSoft Decoder Pack 
-; Copyright (c) 2023,  MSDN.WhiteKnight (https://github.com/smallsoft-rus/decoder-pack) 
+; Copyright (c) 2025,  MSDN.WhiteKnight (https://github.com/smallsoft-rus/decoder-pack) 
 ; License: BSD 2.0
 
 [Setup]
@@ -79,24 +79,22 @@ Name: "{group}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\conf
 Name: "{group}\{cm:ProgramOnTheWeb,SmallSoft Decoder Pack}"; Filename: "https://smallsoftru.wordpress.com/"
 Name: "{group}\Исходный код"; Filename: "https://github.com/smallsoft-rus/decoder-pack";
 Name: "{group}\{cm:UninstallProgram,SmallSoft Decoder Pack}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"; Tasks: desktopicon
 
-;FAVOURITES
-Name: "{userfavorites}\SmallSoft - Бесплатные программы"; IconFilename:"{app}\config.exe"; Filename: "https://smallsoftru.wordpress.com/"; MinVersion: 4.1,4;
-;-------------------------------------------------------------------------------------------------------------------------
-; DESKTOP PROGRAM ICONS
-Name: "{commondesktop}\Small Media Player"; IconFilename:"{app}\smp.ico"; Filename: "{app}\smplayer.exe"; Tasks: smplayer_desktopicon;
-Name: "{commondesktop}\SmallSoft Multimedia Control Panel"; Filename: "{app}\mmcontrol.exe"; Tasks: mmcontrol_desktopicon;
-
-;CONFIG ICONS PROGRAM GROUP
+; GROUP CONFIG ICONS
 Name: "{group}\Аудио кодеки\Свойства DC-Bass Source"; Filename: "{app}\config.exe"; Parameters:"/p ""DC-Bass Source"""; IconFileName:"{app}\DC-Bass_Source\dc.ico";Components:audio\bass;
 Name: "{group}\Аудио кодеки\Свойства Core AAC Audio Decoder"; Filename: "{app}\config.exe"; Parameters:"/p ""CoreAAC Audio Decoder"""; IconFileName:"{app}\AAC\aac.ico";Components:audio\aac;
 Name: "{group}\Видео кодеки\Свойства DivX MPEG-4 ASP Decoder"; Filename: "{app}\config.exe"; Parameters:"/p ""DivX Decoder Filter"""; IconFileName:"{app}\divx\divx.ico";Components:video\divx;
 Name: "{group}\Видео кодеки\Настроить DivX H.264 Decoder"; Filename: "{app}\config.exe"; Parameters:"/p ""DivX H.264 Decoder"""; IconFileName:"{app}\divx\divx.ico";Components:video\divx_h264;
-;PROGRAM ICONS IN GROUP
+
+; GROUP PROGRAM ICONS
 Name: "{group}\Программы\Small Media Player"; IconFilename:"{app}\smp.ico"; Filename: "{app}\smplayer.exe"; Components:program\smplayer;
 Name: "{group}\Программы\SmallSoft Multimedia Control Panel"; Filename: "{app}\mmcontrol.exe"; Components:program\mmcontrol;
 
+;-------------------------------------------------------------------------------------------------------------------------
+; DESKTOP ICONS
+Name: "{commondesktop}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"; Tasks: desktopicon
+Name: "{commondesktop}\Small Media Player"; IconFilename:"{app}\smp.ico"; Filename: "{app}\smplayer.exe"; Tasks: smplayer_desktopicon;
+Name: "{commondesktop}\SmallSoft Multimedia Control Panel"; Filename: "{app}\mmcontrol.exe"; Tasks: mmcontrol_desktopicon;
 
 [Run]
 Filename: "{app}\config.exe"; Description: "Настроить кодеки"; Flags: nowait postinstall skipifsilent;
