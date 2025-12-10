@@ -5,6 +5,8 @@
 *.vcxproj text
 *.sln text eol=crlf
 *.ico binary
+*.bmp binary
+*.png binary
 
 # Exclude generated HTML from language stats
 package/** linguist-generated
