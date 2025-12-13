@@ -31,12 +31,10 @@ DWORD size=sizeof(data);
 DWORD size2;
 
 REGFILTER2 rgf={0};
-BOOL b;
 BYTE* p=NULL;
 
 BYTE* pd=NULL;
 BYTE* pointer=NULL;
-HRESULT hr;
 
 StringCchCopy(strFiltersKey,500,L"CLSID\\");
 CurrentCatCLSID(buf,500);
@@ -212,10 +210,8 @@ BOOL RegFilterInformation(const TCHAR* guid,FILTER_INFORMATION* lpinfo){
 HKEY hKey=NULL;
 LONG lRes;
 TCHAR key_name[500]=L"";
-TCHAR buf[500];
 TCHAR data[500];
 DWORD size=sizeof(data);
-DWORD size2;
 
 StringCchCopy(key_name,500,L"CLSID\\");
 StringCchCat(key_name,500,guid);

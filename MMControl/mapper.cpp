@@ -205,7 +205,6 @@ HRESULT GetMerit(IPropertyBag *pPropBag, DWORD *pdwMerit)
     VARIANT varFilData={0};
     varFilData.vt = VT_UI1 | VT_ARRAY;
     varFilData.parray = 0;     // docs say to zero this
-	TCHAR buf[256];
     BYTE *pbFilterData = 0;    // 0 if not read
     DWORD dwcbFilterDAta = 0;  // 0 if not read
 
@@ -270,7 +269,6 @@ UINT mapper_SetMerit(IPropertyBag *pPropBag, DWORD dwMerit,BYTE* pdata,UINT c)
     VARIANT varFilData={0};
     varFilData.vt = VT_UI1 | VT_ARRAY;
     varFilData.parray = 0;     // docs say to zero this
-	TCHAR buf[256];
     BYTE *pbFilterData = 0;    // 0 if not read
     DWORD dwcbFilterDAta = 0;  // 0 if not read
 	DWORD dw=0;

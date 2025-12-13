@@ -198,8 +198,6 @@ if(j!=-1)SendMessage(hFilterList,LB_SETCURSEL,j,0);
 
 void Command_FilterInfo(){
 int i;
-TCHAR text[5000];
-
 BOOL res;
 
 i=SendMessage(hFilterList,LB_GETCURSEL,0,0);
@@ -393,9 +391,9 @@ return FALSE;
 
 void Command_FilterProperties(){
 int i;
-TCHAR text[5000];
 BOOL res;
 IBaseFilter* pFilter=NULL;
+
 i=SendMessage(hFilterList,LB_GETCURSEL,0,0);
 if(i==-1)return;
 SendMessage(hFilterList,LB_GETTEXT,i,(LPARAM)CurrentFilterName);
@@ -438,7 +436,6 @@ SendMessage(hProgressBar,PBM_SETPOS,Percent,0);
 }
 
 void SearchIncorrectCodecs(){
-int i,j;
 FILTER_INFORMATION fi={0};
 TCHAR buf[500]=L"";
 TCHAR guid[256]=L"";
