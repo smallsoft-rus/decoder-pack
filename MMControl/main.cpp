@@ -143,9 +143,9 @@ switch(uMsg){
     case WM_COMMAND:
     switch(LOWORD(wParam)){
         case ID_HOMEPAGE:
-        ShellExecute(NULL, L"open", L"http://smallsoft.h16.ru/",L"",L"",SW_SHOW);break;
+        ShellExecute(NULL, L"open", L"https://smallsoftru.wordpress.com/",L"",L"",SW_SHOW);break;
         case ID_FEEDBACK:
-        ShellExecute(NULL, L"open", L"http://smallsoft.h16.ru/form/",L"",L"",SW_SHOW);break;
+        ShellExecute(NULL, L"open", L"https://github.com/smallsoft-rus/decoder-pack/issues/new",L"",L"",SW_SHOW);break;
 
         case IDOK:EndDialog(hDlg,0);break;
     }break;
@@ -314,9 +314,9 @@ switch(uMsg){
             break;
 
         case ID_HOMEPAGE:
-            ShellExecute(NULL, L"open", L"http://smallsoft.h16.ru/",L"",L"",SW_SHOW);break;
-        case ID_FORUM:
-            ShellExecute(NULL, L"open", L"http://softforum.zbord.ru/",L"",L"",SW_SHOW);break;
+            ShellExecute(NULL, L"open", L"https://smallsoftru.wordpress.com/",L"",L"",SW_SHOW);break;
+        case ID_SOURCECODE:
+            ShellExecute(NULL, L"open", L"https://github.com/smallsoft-rus/decoder-pack",L"",L"",SW_SHOW);break;
 
         case ID_HELP:
             ShellExecute(NULL, L"open", L"readme.txt",L"",L"",SW_SHOW);
@@ -384,7 +384,7 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine,i
     }
 
     //create window
-    hMainWnd=CreateWindow(wclass_name,L"SmallSoft Multimedia Control Panel v1.2",WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,0,
+    hMainWnd=CreateWindow(wclass_name,L"SmallSoft Multimedia Control Panel",WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,0,
         500,440,NULL,NULL,hInstance,NULL);
 
     if(hMainWnd==NULL){

@@ -40,7 +40,7 @@
 #define ID_EXIT                                 40006
 #define ID_HELP                                 40007
 #define ID_HOMEPAGE                             40008
-#define ID_FORUM                                40009
+#define ID_SOURCECODE                           40009
 #define ID_ABOUT                                40010
 #define ID_REG_SYSTEM_ADDITIONAL                40011
 #define IDC_TEXT                                40013

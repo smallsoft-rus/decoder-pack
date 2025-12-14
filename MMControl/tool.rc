@@ -68,7 +68,7 @@ IDR_MENU1 MENU
     {
         MENUITEM "Справка", ID_HELP
         MENUITEM "Сайт программы", ID_HOMEPAGE
-        MENUITEM "Форум", ID_FORUM
+        MENUITEM "Репозиторий", ID_SOURCECODE
         MENUITEM SEPARATOR
         MENUITEM "О программе", ID_ABOUT
     }
@@ -80,26 +80,26 @@ IDR_MENU1 MENU
 // Dialog resources
 //
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
-IDD_ABOUT DIALOG 0, 0, 205, 133
+IDD_ABOUT DIALOG 0, 0, 260, 133
 STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SETFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP
 CAPTION "О программе"
 FONT 12, "Times New Roman"
 {
-    DEFPUSHBUTTON   "Закрыть", IDOK, 125, 105, 55, 14
+    DEFPUSHBUTTON   "Закрыть", IDOK, 170, 105, 55, 14
     LTEXT           "SmallSoft Multimedia Control Panel v1.2", IDC_STATIC, 25, 5, 111, 8, SS_LEFT
     LTEXT           "Разработчик:", IDC_STATIC, 60, 15, 50, 8, SS_LEFT
     CONTROL         IDB_LOGO, IDC_STATIC, WC_STATIC, SS_BITMAP, 10, 15, 44, 39
     LTEXT           "(4.10.2012)", IDC_STATIC, 150, 5, 34, 8, SS_LEFT
     LTEXT           "SmallSoft", IDC_STATIC, 125, 15, 45, 8, SS_LEFT
-    EDITTEXT        IDC_TEXT, 10, 60, 105, 65, WS_VSCROLL | ES_MULTILINE | ES_READONLY
+    EDITTEXT        IDC_TEXT, 10, 60, 155, 65, WS_VSCROLL | ES_MULTILINE | ES_READONLY
     LTEXT           "Сайт программы:", IDC_STATIC, 60, 35, 57, 8, SS_LEFT
-    LTEXT           "http://smallsoft.h16.ru/", IDC_STATIC, 125, 35, 60, 8, SS_LEFT
+    LTEXT           "https://smallsoftru.wordpress.com/", IDC_STATIC, 125, 35, 120, 8, SS_LEFT
     LTEXT           "E-Mail:", IDC_STATIC, 60, 25, 21, 8, SS_LEFT
     LTEXT           "vadim--111@yandex.ru", IDC_STATIC, 125, 25, 66, 8, SS_LEFT
-    LTEXT           "Форум:", IDC_STATIC, 60, 45, 23, 8, SS_LEFT
-    LTEXT           "http://softforum.zbord.ru/", IDC_STATIC, 125, 45, 68, 8, SS_LEFT
-    PUSHBUTTON      "Сайт программы", ID_HOMEPAGE, 125, 60, 56, 14
-    PUSHBUTTON      "Обратная связь", ID_FEEDBACK, 125, 80, 55, 15
+    LTEXT           "Репозиторий:", IDC_STATIC, 60, 45, 50, 8, SS_LEFT
+    LTEXT           "https://github.com/smallsoft-rus/decoder-pack", IDC_STATIC, 125, 45, 125, 8, SS_LEFT
+    PUSHBUTTON      "Сайт программы", ID_HOMEPAGE, 170, 60, 56, 14
+    PUSHBUTTON      "Обратная связь", ID_FEEDBACK, 170, 80, 55, 15
 }
 
 
