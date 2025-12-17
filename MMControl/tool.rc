@@ -148,7 +148,7 @@ FONT 8, "Ms Shell Dlg"
     LTEXT           "соответствующую кнопку, затем нажмите ОК", IDC_STATIC, 20, 155, 156, 8, SS_LEFT
     LTEXT           "2. Числовое значение можно вводить в HEX с префиксом 0х,", IDC_STATIC, 5, 165, 210, 8, SS_LEFT
     LTEXT           " или в виде десятичного числа", IDC_STATIC, 20, 175, 104, 8, SS_LEFT
-    LTEXT           "3. У компрессоров приритет должен быть MERIT_DO_NOT_USE", IDC_STATIC, 5, 185, 222, 8, SS_LEFT
+    LTEXT           "3. У компрессоров приоритет должен быть MERIT_DO_NOT_USE", IDC_STATIC, 5, 185, 222, 8, SS_LEFT
     LTEXT           "или ниже", IDC_STATIC, 20, 195, 32, 8, SS_LEFT
 }
 
