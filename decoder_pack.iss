@@ -208,7 +208,13 @@ Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes";
 Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".flac"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".ape"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".wv"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".avi"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".wmv"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".mpg"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".mpeg"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\Applications\smplayer.exe\SupportedTypes"; ValueType:string; ValueName: ".mkv"; ValueData: ""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 
+; Audio file types
 Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".wav"; ValueData: "smallsoft_mediafile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".mp3"; ValueData: "smallsoft_mediafile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".wma"; ValueData: "smallsoft_mediafile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
@@ -233,3 +239,23 @@ Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open"; Flags: un
 Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open"; ValueType:string; ValueName: ""; ValueData: "Open in Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open\command"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_mediafile\shell\open\command"; ValueType:string; ValueName: ""; ValueData: """{app}\smplayer.exe"" ""%1"""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+
+; Video file types
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".avi"; ValueData: "smallsoft_videofile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".wmv"; ValueData: "smallsoft_videofile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".mpg"; ValueData: "smallsoft_videofile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".mpeg"; ValueData: "smallsoft_videofile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociations"; ValueType:string; ValueName: ".mkv"; ValueData: "smallsoft_videofile"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\CLSID"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\CLSID"; ValueType:string; ValueName: ""; ValueData: "{{49017F88-033A-4F11-90F9-9057FE9FFB02}}"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add"; ValueType:string; ValueName: ""; ValueData: "Add to Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add\command"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add\command"; ValueType:string; ValueName: ""; ValueData: """{app}\smplayer.exe"" /a ""%1"""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\open"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\open"; ValueType:string; ValueName: ""; ValueData: "Open in Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\open\command"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\open\command"; ValueType:string; ValueName: ""; ValueData: """{app}\smplayer.exe"" ""%1"""; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
