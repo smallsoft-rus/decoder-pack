@@ -91,7 +91,7 @@
 
 Легкий проигрыватель мультимедиа файлов для Windows, поддерживает как аудио, так и видео.
 
-**SmallSoft Multimedia Control Panel 1.1**
+**SmallSoft Multimedia Control Panel 1.3**
 
 Автор: [SmallSoft](https://smallsoftru.wordpress.com/2025/05/02/multimedia-control-panel/)
 

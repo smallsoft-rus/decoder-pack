@@ -40,7 +40,7 @@ Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: i
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\mmcontrol.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
-Source: "C:\Distr\SmallSoft_Decoder_Pack\readme_mmcontrol.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
+Source: "package\mmcontrol.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\AAC\*"; DestDir: "{app}\AAC"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\aac;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\DC-Bass_Source\*"; DestDir: "{app}\DC-Bass_Source"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\bass;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\dscaler\MpegAudio.dll"; DestDir: "{app}\dscaler"; Flags: ignoreversion;Components: audio\ds_audio;
