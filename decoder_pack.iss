@@ -36,9 +36,11 @@ Source: "C:\Distr\SmallSoft_Decoder_Pack\config.exe"; DestDir: "{app}"; Flags: i
 Source: "package\readme.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\license.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "package\help\*"; DestDir: "{app}\help"; Flags: ignoreversion; Components: main;
+Source: "package\uninst.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\codecs.reg"; DestDir: "{app}"; Flags: ignoreversion; Components: main;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smplayer.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\smp.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
+Source: "package\video.ico"; DestDir: "{app}"; Flags: ignoreversion; Components: program\smplayer;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\mmcontrol.exe"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
 Source: "package\mmcontrol.txt"; DestDir: "{app}"; Flags: ignoreversion; Components: program\mmcontrol;
 Source: "C:\Distr\SmallSoft_Decoder_Pack\AAC\*"; DestDir: "{app}\AAC"; Flags: ignoreversion recursesubdirs createallsubdirs;Components: audio\aac;
@@ -78,7 +80,7 @@ Name: "program\mmcontrol"; Description: "SmallSoft Multimedia Control Panel"; Ty
 Name: "{group}\Настройка SmallSoft Decoder Pack"; Filename: "{app}\config.exe"
 Name: "{group}\{cm:ProgramOnTheWeb,SmallSoft Decoder Pack}"; Filename: "https://smallsoftru.wordpress.com/"
 Name: "{group}\Исходный код"; Filename: "https://github.com/smallsoft-rus/decoder-pack";
-Name: "{group}\{cm:UninstallProgram,SmallSoft Decoder Pack}"; Filename: "{uninstallexe}"
+Name: "{group}\{cm:UninstallProgram,SmallSoft Decoder Pack}"; Filename: "{uninstallexe}"; IconFileName:"{app}\uninst.ico";
 
 ; GROUP CONFIG ICONS
 Name: "{group}\Аудио кодеки\Свойства DC-Bass Source"; Filename: "{app}\config.exe"; Parameters:"/p ""DC-Bass Source"""; IconFileName:"{app}\DC-Bass_Source\dc.ico";Components:audio\bass;
@@ -250,6 +252,8 @@ Root: HKLM; Subkey: "Software\SmallSoft\DP_MediaPlayer\Capabilities\FileAssociat
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\CLSID"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\CLSID"; ValueType:string; ValueName: ""; ValueData: "{{49017F88-033A-4F11-90F9-9057FE9FFB02}}"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\DefaultIcon"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
+Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\DefaultIcon"; ValueType:string; ValueName: ""; ValueData: "{app}\video.ico"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
 Root: HKLM; Subkey: "Software\Classes\smallsoft_videofile\shell\add"; ValueType:string; ValueName: ""; ValueData: "Add to Small Media Player"; Flags: uninsdeletevalue uninsdeletekeyifempty noerror; Components:program\smplayer;
